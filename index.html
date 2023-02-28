@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/fevicon-game.png"
+      type="image/x-icon"
+    />
+    <title>Number gaming</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./assets/images/fevicon-game.png" type="image/x-icon">
-  <title>Number gaming</title>
+    <!-- normalize css link -->
+    <link rel="stylesheet" href="./styles/normalise.css" />
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
 
-  <!-- normalize css link -->
-  <link rel="stylesheet" href="./styles/normalise.css">
-  <!-- custom css link -->
-  <link rel="stylesheet" href="./styles/style.css">
-</head>
+  <body>
+    <main class="card" id="card">
+      <div class="chance-score">
+        <h4>Chances:<strong id="chance">5</strong></h4>
+        <h4>Score:<strong id="score">0</strong></h4>
+      </div>
+      <h1 class="title">Guess The Number</h1>
+      <p class="text">Range between 1-50</p>
+      <div class="error-msg"><p>Sorry! please enter the range..</p></div>
+      <div class="input-box" id="input-box">
+        <input type="number" name="" id="input-num" class="input-num" />
+      </div>
 
-<body>
-  <main class="card" id="card">
-    <h1 class="title">Guess The Number</h1>
-    <p>Range between 1-100</p>
-    <div class="input-box" id="input-box">
-      <input type="number" name="" id="input-num" class="input-num">
-    </div>
+      <div class="btn-guess" id="btn">
+        <button type="submit" class="btn" id="btn">
+          <strong>Guess</strong>
+        </button>
+      </div>
 
-    <div class="btn" id="btn">
-      <button type="submit" class="btn" id="btn">Guess</button>
-    </div>
-
-    <div class="output" id="output">
-      <p id="output-val" id="output"></p>
-    </div>
-
-  </main>
-  <script src="./script/script.js"></script>
-</body>
-
+      <div class="output" id="output">
+        <p id="output-val" class="text-output"></p>
+      </div>
+      <div class="re-btn" id="re-btn">
+        <button type="submit" class="restart-btn" id="restart-btn">
+          <strong>New Game</strong>
+        </button>
+      </div>
+    </main>
+    <script src="./script/script.js"></script>
+  </body>
 </html>
